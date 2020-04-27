@@ -27,6 +27,7 @@ public class LoginTest {
 
     @BeforeEach
     public void setUp() throws Exception {
+        driver.manage().deleteAllCookies();
         driver.get("https://pe.ug.edu.pl/");
     }
 
