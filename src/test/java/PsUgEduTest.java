@@ -68,8 +68,9 @@ public class PsUgEduTest {
 
     @Test
     public void FormTest() {
+        driver.get("https://inf.ug.edu.pl/sq/src/login.php");
         List<WebElement> list = driver.findElement(By.xpath("//form")).findElements(By.xpath("./*"));
-        assertEquals(2,list.size());
+        assertEquals(1,list.size());
     }
 
 }
