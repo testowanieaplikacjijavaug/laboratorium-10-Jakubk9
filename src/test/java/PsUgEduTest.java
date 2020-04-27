@@ -52,7 +52,6 @@ public class PsUgEduTest {
     @Test
     public void LinksTest() throws InterruptedException {
         String startTitle = driver.getTitle();
-        Thread.sleep(5000);
         List<String> hrefs = driver.findElements(By.xpath("//a[@href and string-length(@href)!=0 ]"))
                 .stream()
                 .map(x -> x.getAttribute("href"))
